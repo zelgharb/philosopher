@@ -58,16 +58,16 @@ int    parse_args(int argc, char **argv)
         
         i = 1;
         if (argc != 5 && argc != 6)
-                error_exit("Error: wrong number of arguments");
+                error_exit();
         while(i < argc)
         {
                 if(!ft_check_number(argv[i]))
-                        error_exit("Error: invalid input, only positive numbers allowed.");
-                value = ft_atoi(argv[i]);5tr
+                        error_exit();
+                value = ft_atoi(argv[i]);
                 if(i == 1 && (value <= 0 || value > 200))
-                        error_exit("Input invalid: the number of philosophers must be between 1 and 200");
+                        error_exit();
                 if (i != 1 && value == -1)
-                        error_exit("Input invalid: the argument must be between 0 and 2147483647");
+                        error_exit();
                 i++;
         }
         return(0);

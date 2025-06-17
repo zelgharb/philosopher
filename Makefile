@@ -4,7 +4,8 @@ SRCS	= 	ft_split.c \
 			parser.c \
 			print_error.c \
 			test_thread.c \
-			main.c
+			main.c \
+			routine.c
 
 OBJS	= $(SRCS:.c=.o)
 
